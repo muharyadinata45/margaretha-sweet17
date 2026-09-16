@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+  <stop stop-color="#cfe6fb"/><stop offset=".48" stop-color="#edf5ff"/><stop offset="1" stop-color="#d8e8f8"/>
+ </linearGradient>
+ <radialGradient id="mist"><stop stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+  <stop stop-color="#fff"/><stop offset=".5" stop-color="#e7d9f4"/><stop offset="1" stop-color="#b7d7f2"/>
+ </linearGradient>
+ <linearGradient id="bluepetal"><stop stop-color="#dff0ff"/><stop offset="1" stop-color="#9dc8eb"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+ <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".14"/></filter>
+ <g id="flower">
+  <ellipse cy="-25" rx="19" ry="31" fill="url(#petal)"/><ellipse cx="25" rx="31" ry="19" fill="url(#petal)"/>
+  <ellipse cy="25" rx="19" ry="31" fill="url(#petal)"/><ellipse cx="-25" rx="31" ry="19" fill="url(#petal)"/>
+  <circle r="13" fill="#ffd68e"/><circle r="5" fill="#fff8d2"/>
+ </g>
+ <g id="flowerBlue">
+  <ellipse cy="-21" rx="15" ry="26" fill="url(#bluepetal)"/><ellipse cx="21" rx="26" ry="15" fill="url(#bluepetal)"/>
+  <ellipse cy="21" rx="15" ry="26" fill="url(#bluepetal)"/><ellipse cx="-21" rx="26" ry="15" fill="url(#bluepetal)"/>
+  <circle r="10" fill="#f7cbdc"/>
+ </g>
+ <g id="leaf"><path d="M0 0 C22 -24 45 -15 47 0 C34 19 13 17 0 0Z" fill="#8bbbd1" opacity=".7"/></g>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<!-- soft center glow: the UI sits here -->
+<ellipse cx="800" cy="500" rx="620" ry="410" fill="url(#mist)" opacity=".8" filter="url(#blur)"/>
+
+<!-- TOP LEFT LUXURY BOUQUET -->
+<g filter="url(#shadow)">
+ <path d="M-50 180 C150 20 320 110 500 -10" fill="none" stroke="#9fc8e6" stroke-width="15" opacity=".65"/>
+ <use href="#flower" transform="translate(72 110) scale(1.55)"/>
+ <use href="#flowerBlue" transform="translate(185 66) scale(1.05)"/>
+ <use href="#flower" transform="translate(310 75) scale(1.25)"/>
+ <use href="#flowerBlue" transform="translate(430 38) scale(.92)"/>
+ <use href="#flower" transform="translate(545 8) scale(.65)"/>
+ <use href="#leaf" transform="translate(120 165) rotate(-30) scale(1.3)"/>
+ <use href="#leaf" transform="translate(265 145) rotate(35) scale(1.2)"/>
+ <use href="#leaf" transform="translate(395 112) rotate(-25) scale(1.1)"/>
+</g>
+
+<!-- TOP RIGHT LUXURY BOUQUET -->
+<g filter="url(#shadow)">
+ <path d="M1650 180 C1450 20 1280 110 1100 -10" fill="none" stroke="#9fc8e6" stroke-width="15" opacity=".65"/>
+ <use href="#flower" transform="translate(1528 110) scale(1.55)"/>
+ <use href="#flowerBlue" transform="translate(1415 66) scale(1.05)"/>
+ <use href="#flower" transform="translate(1290 75) scale(1.25)"/>
+ <use href="#flowerBlue" transform="translate(1170 38) scale(.92)"/>
+ <use href="#flower" transform="translate(1055 8) scale(.65)"/>
+ <use href="#leaf" transform="translate(1480 165) rotate(30) scale(1.3)"/>
+ <use href="#leaf" transform="translate(1335 145) rotate(-35) scale(1.2)"/>
+ <use href="#leaf" transform="translate(1205 112) rotate(25) scale(1.1)"/>
+</g>
+
+<!-- BOTTOM LEFT BOUQUET -->
+<g filter="url(#shadow)">
+ <path d="M-50 875 C150 1010 330 915 505 1015" fill="none" stroke="#9fc8e6" stroke-width="15" opacity=".65"/>
+ <use href="#flower" transform="translate(82 885) scale(1.55)"/>
+ <use href="#flowerBlue" transform="translate(195 932) scale(1.05)"/>
+ <use href="#flower" transform="translate(320 928) scale(1.25)"/>
+ <use href="#flowerBlue" transform="translate(440 970) scale(.92)"/>
+ <use href="#leaf" transform="translate(130 820) rotate(30) scale(1.25)"/>
+ <use href="#leaf" transform="translate(275 850) rotate(-35) scale(1.15)"/>
+</g>
+
+<!-- BOTTOM RIGHT BOUQUET -->
+<g filter="url(#shadow)">
+ <path d="M1650 875 C1450 1010 1270 915 1095 1015" fill="none" stroke="#9fc8e6" stroke-width="15" opacity=".65"/>
+ <use href="#flower" transform="translate(1518 885) scale(1.55)"/>
+ <use href="#flowerBlue" transform="translate(1405 932) scale(1.05)"/>
+ <use href="#flower" transform="translate(1280 928) scale(1.25)"/>
+ <use href="#flowerBlue" transform="translate(1160 970) scale(.92)"/>
+ <use href="#leaf" transform="translate(1470 820) rotate(-30) scale(1.25)"/>
+ <use href="#leaf" transform="translate(1325 850) rotate(35) scale(1.15)"/>
+</g>
+
+<!-- small floating floral accents -->
+<g opacity=".95">
+ <use href="#flowerBlue" transform="translate(55 410) scale(.45)"/>
+ <use href="#flower" transform="translate(1545 430) scale(.45)"/>
+ <use href="#flowerBlue" transform="translate(80 610) scale(.36)"/>
+ <use href="#flower" transform="translate(1520 615) scale(.36)"/>
+</g>
+
+<!-- elegant sparkles -->
+<g fill="#fff9c9" stroke="#fff" stroke-width="2">
+ <text x="170" y="300" font-size="40">✦</text><text x="1390" y="310" font-size="38">✦</text>
+ <text x="235" y="730" font-size="30">✧</text><text x="1330" y="745" font-size="34">✧</text>
+ <text x="680" y="90" font-size="27">✦</text><text x="900" y="120" font-size="22">✧</text>
+</g>
+
+<!-- translucent ornamental ribbons -->
+<path d="M0 250 C250 190 360 250 500 205" fill="none" stroke="#fff" stroke-width="5" opacity=".55"/>
+<path d="M1600 250 C1350 190 1240 250 1100 205" fill="none" stroke="#fff" stroke-width="5" opacity=".55"/>
+</svg>

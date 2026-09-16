@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420">
+<defs><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#b95d91" flood-opacity=".18"/></filter></defs>
+<g filter="url(#s)" stroke="#8f6d61" stroke-width="6" stroke-linejoin="round">
+<path fill="#f29ac0" d="M80 160C45 95 55 20 105 22c32 2 52 35 75 52 23-17 43-50 75-52 50-2 60 73 25 138-18 32-34 47-45 54H125c-12-7-28-22-45-54Z"/>
+<path fill="#fffafc" d="M92 165c0-48 34-72 88-72s88 24 88 72c0 58-39 92-88 92s-88-34-88-92Z"/>
+<ellipse cx="145" cy="164" rx="9" ry="14" fill="#473b42" stroke="none"/><ellipse cx="215" cy="164" rx="9" ry="14" fill="#473b42" stroke="none"/>
+<ellipse cx="180" cy="186" rx="10" ry="7" fill="#f2d34f"/>
+<circle cx="119" cy="190" r="14" fill="#f6a6c5" stroke="none" opacity=".8"/><circle cx="241" cy="190" r="14" fill="#f6a6c5" stroke="none" opacity=".8"/>
+<path fill="none" d="M164 208q16 14 32 0"/>
+<path fill="#f29ac0" d="M112 258c-8 43 0 80 68 92 68-12 76-49 68-92-18 22-40 32-68 32s-50-10-68-32Z"/>
+<path fill="#fffafc" d="M122 280c-2 47 15 77 58 77s60-30 58-77c-18 12-38 17-58 17s-40-5-58-17Z"/>
+<circle cx="118" cy="302" r="18" fill="#f29ac0"/><circle cx="242" cy="302" r="18" fill="#f29ac0"/>
+<path fill="#f29ac0" d="M97 58c28 7 48 2 67-12-5 28-21 46-50 53Z"/>
+</g></svg>
